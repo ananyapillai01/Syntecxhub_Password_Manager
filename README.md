@@ -40,11 +40,10 @@ Secure Password Input
 Project Structure
 
 password_manager/
-│
-├── main.py
-├── vault.json
-├── salt.key
-└── .gitignore
+-> main.py
+-> vault.json
+-> salt.key
+-> .gitignore
 
 How to Run
 
