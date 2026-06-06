@@ -2,7 +2,7 @@ Password Manager
 
 A secure local password manager built using Python and cryptographic encryption techniques.
 
-This project stores passwords in an encrypted JSON vault using AES-based encryption provided by Fernet. A master password is used to derive a secure encryption key with PBKDF2HMAC and SHA-256 hashing.
+This project stores passwords securely in an encrypted JSON vault using Fernet symmetric encryption. A master password is used to derive a secure encryption key with PBKDF2HMAC and SHA-256 hashing.
 
 Features
 
@@ -32,7 +32,7 @@ Salt Generation
 A random salt is generated using `os.urandom()` to prevent identical password hashes.
 
 Encryption
-Passwords are encrypted using Fernet symmetric encryption before being stored locally.
+Passwords are encrypted before storage using Fernet symmetric encryption (AES-based).
 
 Secure Password Input
 `getpass()` is used to hide password input in the terminal.
@@ -48,10 +48,10 @@ password_manager/
 How to Run
 
 1. Clone the repository
-git clone https://github.com/ananyapillai01/password-manager.git
+git clone https://github.com/ananyapillai01/Syntecxhub_Password_Manager.git
 
 2. Navigate into the project folder
-cd password-manager
+cd Syntecxhub_Password_Manager
 
 3. Install dependencies
 pip install cryptography
@@ -70,7 +70,7 @@ PASSWORD MANAGER
 
 Important Notes
 * `vault.json` and `salt.key` are excluded from GitHub using `.gitignore`
-* This project is intended for educational and internship purposes
+* This project was developed for educational and cybersecurity internship learning purposes
 * Passwords are stored locally on the user's machine
 
 Future Improvements
